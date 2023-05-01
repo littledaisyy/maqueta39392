@@ -33,22 +33,39 @@ h1 {
 }
 
 .natalia {
-
   display: flex;
-  height: auto;
+  /*height: auto;*/
+  width: cover;
+  transition: 1s;
+}
+.codigo{
+  height: 6rem;
 }
 
-.pan {
-  background-image: url(../assets/fondo.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+@media (min-width:100px) and (max-width:991px) {
+  .lila {
+    height: auto;
+    background-image: url(../assets/lila.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+  }
+}
+
+@media   (min-width:991.5px) {
+  .lila {
+    height: auto;
+    background-image: url(../assets/lila.png);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    transition: 1s;
+  }
 }
 
 /* TERMINA DESCRIPCION Y FOTO*/
 
 /* COMIENZAN PROYECTOS*/
 #skills {
-  background-color: blanchedalmond;
   text-align: center;
   font-size: 40px;
 }
@@ -110,13 +127,16 @@ h1 {
 
 /* TERMINAN PROYECTOS*/
 .sabroso {
-  background-color: rgb(91, 161, 235);
   height: 5rem;
 }
 
-.proyectos {
-  background: darkgoldenrod;
+#proyectos {
   text-align: center;
   font-size: 40px;
 }
 
+.azul {
+  background-image: url(../assets/fondo\ azul.png);
+  background-size: 103% 103%;
+  background-repeat: no-repeat;
+}
